@@ -4,6 +4,8 @@
     <script src="https://cdn.amplitude.com/script/3b307d78a06a4ea84cf295db012fad8d.js"></script>
     <script src="https://cdn.amplitude.com/libs/plugin-session-replay-browser-1.12.1-min.js.gz"></script>
     <script type="text/javascript" src="https://cdn.amplitude.com/script/3b307d78a06a4ea84cf295db012fad8d.experiment.js"></script>
+    <script src="https://cdn.amplitude.com/script/3b307d78a06a4ea84cf295db012fad8d.engagement.js"></script>
+    
     <script>
     var sessionReplayTracking = window.sessionReplay.plugin({sampleRate: 1});
         window.amplitude.add(sessionReplayTracking);
@@ -19,7 +21,8 @@
         },
         });
     </script>
-
+<script>amplitude.add(window.engagement.plugin())</script>
+    
 <link rel="shortcut icon" type="x-icon" href="pixelcut-export copy.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
