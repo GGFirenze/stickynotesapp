@@ -130,6 +130,7 @@
             const note = button.closest('.sticky-note');
             document.getElementById('to-do-notes').removeChild(note);
             document.getElementById('done-notes').appendChild(note);
+            button.remove(); 
             
             amplitude.track('Note Moved to Done', {
                 button_name: "done",
